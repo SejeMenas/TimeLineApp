@@ -1,6 +1,8 @@
 require('normalize.css');
 require('styles/App.css');
 
+let yeomanImage = require('../images/yeoman.png');
+
 import React from 'react';
 import {Link} from 'react-router';
 
