@@ -10,7 +10,7 @@ import { Router, Route } from 'react-router';
 const routes = (
   <Router>
     <Route path="/" component={Main}>
-      <Route path="/list" component={CandidateList}></Route>
+      <Route path="list" component={CandidateList}></Route>
     </Route>
   </Router>
 );

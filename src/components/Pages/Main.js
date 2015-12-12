@@ -12,7 +12,7 @@ class AppComponent extends React.Component {
           <span className="col-xs-12 camera--text">This is a space reserved to camera scan</span>
         </div>
         <div className="instruction">
-          <Link to={'/list'}>
+          <Link to='list'>
             <span className="col-xs-12 instruction--text">
               Aponte sua câmera para ter o reconhecimento facial automático do candidato
             </span>
