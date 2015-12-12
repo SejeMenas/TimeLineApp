@@ -2,15 +2,17 @@ require('normalize.css');
 require('styles/App.css');
 
 import React from 'react';
-
-let yeomanImage = require('../images/yeoman.png');
+import {Link} from 'react-router';
 
 class AppComponent extends React.Component {
+  handleClick() {
+    console.log('AAH');
+  }
   render() {
     return (
       <div className="index">
-        <img src={yeomanImage} alt="Yeoman Generator" />
-        <div className="notice">Please edit <code>src/components/Main.js</code> to get started!</div>
+        <Link to="/test" onClick={this.handleClick}><button>AH CARLAHO PORRA</button></Link>
+        <div className="notice">Please edit, or not <code>src/components/Main.js</code> to get started!</div>
       </div>
     );
   }
