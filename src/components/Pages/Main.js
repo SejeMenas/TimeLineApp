@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router';
-import CandidateScan from '../CandidateScan/CandidateScan';
+import CandidateScan from '../Candidate/Scan/Scan';
 
 import '../../styles/main.less';
 let scan = require('../../images/scan.png');

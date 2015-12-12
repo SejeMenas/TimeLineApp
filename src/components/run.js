@@ -3,7 +3,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import Main from './Pages/Main';
-import CandidateList from './Pages/CandidateList';
+import CandidateList from './Pages/List';
 
 import { Router, Route, IndexRoute } from 'react-router';
 
