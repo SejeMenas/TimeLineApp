@@ -1,18 +1,20 @@
 import React from 'react';
 import {Link} from 'react-router';
-import Webcam from 'react-webcam';
+import CandidateScan from '../CandidateScan/CandidateScan';
 
 import '../../styles/main.less';
+let scan = require('../../images/scan.png');
 
 class AppComponent extends React.Component {
   click() {
-    console.log(Link);
+    console.log(Webcam.stream);
   }
   render() {
     return (
       <div className="CandidateScan component">
         <div className="camera">
-          <Webcam height={300} audio={false} className="camera--webcam"/>
+          <img src={scan} className="camera--img" alt="scan" />
+          <CandidateScan />
         </div>
         <div className="instruction">
           <Link to='list' onClick={this.click}>
@@ -20,7 +22,7 @@ class AppComponent extends React.Component {
               Aponte sua câmera para ter o reconhecimento facial automático do candidato
             </span>
             <button className="col-xs-offset-1 col-xs-10 btn gotolist">
-              <span className="instruction--text">Candidados</span>
+              <span onClick={this.click} className="instruction--text">Candidados</span>
             </button>
           </Link>
         </div>

@@ -5,13 +5,13 @@ import ReactDOM from 'react-dom';
 import Main from './Pages/Main';
 import CandidateList from './Pages/CandidateList';
 
-import { Router, Route } from 'react-router';
+import { Router, Route, IndexRoute } from 'react-router';
 
 const routes = (
   <Router>
-    <Route path="/" component={Main}>
-      <Route path="list" component={CandidateList}></Route>
-    </Route>
+    <IndexRoute component={Main} />
+    <Route path="/" component={Main} />
+    <Route path="/list" component={CandidateList} />
   </Router>
 );
 
