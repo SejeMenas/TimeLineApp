@@ -7,7 +7,7 @@ let scan = require('../../images/scan.png');
 
 class AppComponent extends React.Component {
   click() {
-    console.log(Webcam.stream);
+    location.reload();
   }
   render() {
     return (
@@ -17,7 +17,7 @@ class AppComponent extends React.Component {
           <CandidateScan />
         </div>
         <div className="instruction">
-          <Link to='list' onClick={this.click}>
+          <Link to='/list' onClick={this.click}>
             <span className="col-xs-12 instruction--text">
               Aponte sua câmera para ter o reconhecimento facial automático do candidato
             </span>
