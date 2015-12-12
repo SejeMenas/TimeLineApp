@@ -1,11 +1,20 @@
-import React from 'react';
+import React, {PropTypes} from 'react';
+import CandidateItem from '../Candidate/Item/Item';
+import Search from '../Candidate/Search/Search';
 
-var CandidateList = React.createClass({
+export default class CandidateList extends React.Component {
+
   render() {
     return (
-      <div>Oi</div>
+      <div>
+        <Search />
+        <div>
+          <CandidateItem colorCycle={1}/>
+          <CandidateItem colorCycle={2}/>
+          <CandidateItem colorCycle={3}/>
+          <CandidateItem colorCycle={4}/>
+        </div>
+      </div>
     );
   }
-});
-
-export default CandidateList;
+}
