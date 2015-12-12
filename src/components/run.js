@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 
 import Main from './Pages/Main';
 import CandidateList from './Pages/List';
-import CandidateTimeLine from './Pages/TimeLine';
+import CandidateTimeLine from './Pages/TimeLinePage';
 
 import { Router, Route, IndexRoute } from 'react-router';
 
