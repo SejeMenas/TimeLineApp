@@ -2,8 +2,8 @@ import 'core-js/fn/object/assign';
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import Main from './Main';
-import Test from './Test';
+import Main from './Pages/Main';
+import Test from './Pages/Test';
 
 import { Router, Route } from 'react-router';
 

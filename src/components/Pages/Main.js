@@ -1,8 +1,6 @@
 require('normalize.css');
 require('styles/App.css');
 
-let yeomanImage = require('../images/yeoman.png');
-
 import React from 'react';
 import {Link} from 'react-router';
 
@@ -14,7 +12,7 @@ class AppComponent extends React.Component {
     return (
       <div className="CandidateScan component">
         <div className="camera">
-          <img src={yeomanImage} alt="Yeoman Generator" />
+          <span>This is a space reserved to camera scan</span>
         </div>
         <div className="container">
           <Link to="/test" onClick={this.handleClick}>
