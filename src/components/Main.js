@@ -10,9 +10,15 @@ class AppComponent extends React.Component {
   }
   render() {
     return (
-      <div className="index">
-        <Link to="/test" onClick={this.handleClick}><button>AH CARLAHO PORRA</button></Link>
-        <div className="notice">Please edit, or not <code>src/components/Main.js</code> to get started!</div>
+      <div className="CandidateScan component">
+        <div className="camera">
+          <img src={yeomanImage} alt="Yeoman Generator" />
+        </div>
+        <div className="container">
+          <Link to="/test" onClick={this.handleClick}>
+            <button type="submit" className="btn btn-success btn-block enter">Lista de candidados</button>
+          </Link>
+        </div>
       </div>
     );
   }
