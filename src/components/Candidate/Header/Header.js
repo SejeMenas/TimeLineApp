@@ -11,7 +11,7 @@ var CandidateHeader = React.createClass({
           <div className="header--img col-xs-12">
           </div>
           <div className="col-xs-3">
-            <br/><br/><br/>
+            <br/><br/>
             <span className="header--team">Partido</span>
           </div>
         </div>
