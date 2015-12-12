@@ -2,6 +2,8 @@ import React, {PropTypes} from 'react';
 import './Search.less';
 import Fetcher from '../../../fetcher';
 
+let lupa = require('../../../images/lupa-01.png');
+
 export default class CandidateList extends React.Component {
 
   testRequest(e){
@@ -27,7 +29,9 @@ export default class CandidateList extends React.Component {
               autoComplete="off"
             />
             <span className="input-group-btn">
-              <button type="submit" className="btn btn-primary" onClick={this.testRequest}>OK</button>
+              <button type="submit" className="btn search--button" onClick={this.testRequest}>
+                <img src={lupa} className="search--img" alt="scan" />
+              </button>
             </span>
           </div>
         </form>
