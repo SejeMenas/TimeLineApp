@@ -11,7 +11,7 @@ export default class CandidateList extends React.Component {
             <input
               className="form-control"
               type="text"
-              placeholder="Busque seu candidato"
+              placeholder="buscar candidatos"
               autoComplete="off"
             />
             <span className="input-group-btn">
