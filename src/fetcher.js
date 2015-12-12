@@ -17,5 +17,6 @@ class Fetcher {
   filterCandidateByState(name, state) {
     return axios.get(`/${this.apiUrl}?estado=${state}&nome=${name}`);
   }
+}
 
 export default new Fetcher();
