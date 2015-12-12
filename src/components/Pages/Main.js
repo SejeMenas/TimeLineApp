@@ -5,9 +5,6 @@ import React from 'react';
 import {Link} from 'react-router';
 
 class AppComponent extends React.Component {
-  handleClick() {
-    console.log('AAH');
-  }
   render() {
     return (
       <div className="CandidateScan component">
@@ -15,7 +12,7 @@ class AppComponent extends React.Component {
           <span>This is a space reserved to camera scan</span>
         </div>
         <div className="container">
-          <Link to="/test" onClick={this.handleClick}>
+          <Link to="/test">
             <button type="submit" className="btn btn-success btn-block enter">Lista de candidados</button>
           </Link>
         </div>
