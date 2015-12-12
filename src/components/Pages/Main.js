@@ -1,18 +1,21 @@
 import React from 'react';
 import {Link} from 'react-router';
+import Webcam from 'react-webcam';
 
 import '../../styles/main.less';
 
 class AppComponent extends React.Component {
+  click() {
+    console.log(Link);
+  }
   render() {
     return (
       <div className="CandidateScan component">
         <div className="camera">
-          <br/><br/><br/><br/><br/><br/><br/>
-          <span className="col-xs-12 camera--text">This is a space reserved to camera scan</span>
+          <Webcam height={300} audio={false} className="camera--webcam"/>
         </div>
         <div className="instruction">
-          <Link to='list'>
+          <Link to='list' onClick={this.click}>
             <span className="col-xs-12 instruction--text">
               Aponte sua câmera para ter o reconhecimento facial automático do candidato
             </span>
