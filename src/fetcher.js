@@ -11,12 +11,16 @@ class Fetcher {
     return axios.get(`${this.apiUrl}/${this.apiPath}?estado=br&nome=${name}`);
   }
 
+  getCandidateByTeam(partido) {
+    return axios.get(`${this.apiUrl}/${this.apiPath}?partido=${partido}`);
+  }
+
   getRjCandidate(name) {
-    return axios.get(`/${this.apiPath}?estado=rj&nome=${name}`);
+    return axios.get(`${this.apiUrl}/${this.apiPath}?estado=rj&nome=${name}`);
   }
 
   filterCandidateByState(name, state) {
-    return axios.get(`/${this.apiPath}?estado=${state}&nome=${name}`);
+    return axios.get(`${this.apiUrl}/${this.apiPath}?estado=${state}&nome=${name}`);
   }
 }
 

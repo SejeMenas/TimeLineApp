@@ -1,20 +1,28 @@
 import React, {PropTypes} from 'react';
 import './Search.less';
-import Fetcher from '../../../fetcher';
+import CandidateActions from '../../../actions/CandidateActions';
 
 let lupa = require('../../../images/lupa-01.png');
 
 export default class CandidateList extends React.Component {
+  constructor(props) {
+    super(props);
 
-  testRequest(e){
+    this.state = {
+      query:'',
+    };
+
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+  handleChange(e) {
+    this.setState({query: e.target.value});
+  }
+
+  handleSubmit(e){
     e.preventDefault();
-    console.log(
-      Fetcher.getPresident('Dilma Rousseff').then((response) => {
-        console.log(response);
-      }).catch((err) => {
-        console.log('candidato não encontrado: ', err);
-      })
-    );
+    CandidateActions.fetchCandidate(this.state.query);
   }
 
   render() {
@@ -27,9 +35,11 @@ export default class CandidateList extends React.Component {
               type="text"
               placeholder="buscar candidatos"
               autoComplete="off"
+              value={this.state.query}
+              onChange={this.handleChange}
             />
             <span className="input-group-btn">
-              <button type="submit" className="btn search--button" onClick={this.testRequest}>
+              <button type="submit" className="btn search--button">
                 <img src={lupa} className="search--img" alt="scan" />
               </button>
             </span>
