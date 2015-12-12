@@ -6,10 +6,9 @@ export default class CandidateHistory extends React.Component {
   render() {
     return (
       <div className="timeline--container">
-        <div className="timeline--text">
+          <div className="main-title-border border"></div>
           <br/><br/><br/>
           <p>{this.props.candiData}</p>
-        </div>
       </div>
     );
   }
