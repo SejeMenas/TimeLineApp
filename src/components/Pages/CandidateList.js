@@ -1,6 +1,6 @@
 import React from 'react';
 
-var Test = React.createClass({
+var CandidateList = React.createClass({
   render() {
     return (
       <div>Oi</div>
@@ -8,4 +8,4 @@ var Test = React.createClass({
   }
 });
 
-export default Test;
+export default CandidateList;
