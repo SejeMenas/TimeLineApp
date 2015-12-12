@@ -10,7 +10,6 @@ export default class CandidateTimeLine extends React.Component {
     return (
       <div>
         <CandidateHeader colorCycle={0}/>
-        <CandidateHistory candiData={text} />
       </div>
     );
   }
