@@ -8,12 +8,14 @@ class CandidateStore {
 
     this.state = {
       nome: 'MOCK',
-      partido: 'MOCK'
+      partido: 'MOCK',
+      foto: '',
+      image: ''
     };
   }
 
   onFetchCandidate(data){
-    this.setState({nome: data[0].nome, partido: data[0].partido});
+    this.setState({nome: data[0].nome, partido: data[0].partido, foto: data[0].foto});
   }
 }
 export default flux.createStore(CandidateStore, 'CandidateStore');

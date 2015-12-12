@@ -34,6 +34,7 @@ export default class CandidateItem extends React.Component {
       <Link to="timeline">
         <div className={`item--container${colorCycle}`}>
           <div className="item--img col-xs-2">
+            <img src={this.state.Candidate.foto} className="item--foto" />
           </div>
           <div className="col-xs-8 item--text">
             <span className="item--name">{this.state.Candidate.nome}</span>
