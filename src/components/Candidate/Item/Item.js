@@ -3,8 +3,9 @@ import './Item.less';
 
 var CandidateItem = React.createClass({
   render() {
+    var colorCycle = this.props.colorCycle;
     return (
-      <div className="item--container">
+      <div className={`item--container${colorCycle}`}>
         <div className="item--img col-xs-2">
         </div>
         <div className="col-xs-8 item--text">

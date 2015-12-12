@@ -9,10 +9,10 @@ export default class CandidateList extends React.Component {
       <div>
         <Search />
         <div>
-          <CandidateItem />
-          <CandidateItem />
-          <CandidateItem />
-          <CandidateItem />
+          <CandidateItem colorCycle={1}/>
+          <CandidateItem colorCycle={2}/>
+          <CandidateItem colorCycle={3}/>
+          <CandidateItem colorCycle={4}/>
         </div>
       </div>
     );
