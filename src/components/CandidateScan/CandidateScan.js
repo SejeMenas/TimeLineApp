@@ -1,15 +1,13 @@
 require('normalize.css');
 require('styles/App.css');
 
-let yeomanImage = require('../images/yeoman.png');
-
 import React from 'react';
-import {Link} from 'react-router';
+
+import './CandidateScan.less';
+
+let yeomanImage = require('../../images/yeoman.png');
 
 class AppComponent extends React.Component {
-  handleClick() {
-    console.log('AAH');
-  }
   render() {
     return (
       <div className="CandidateScan component">
@@ -17,9 +15,9 @@ class AppComponent extends React.Component {
           <img src={yeomanImage} alt="Yeoman Generator" />
         </div>
         <div className="container">
-          <Link to="/test" onClick={this.handleClick}>
+          <span>
             <button type="submit" className="btn btn-success btn-block enter">Lista de candidados</button>
-          </Link>
+          </span>
         </div>
       </div>
     );
