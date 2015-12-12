@@ -3,19 +3,20 @@ import axios from 'axios';
 class Fetcher {
   constructor() {
     this.candidateSections = ['estado','nome','matricula'];
-    this.apiUrl = '/candidatos';
+    this.apiPath = 'candidatos';
+    this.apiUrl = 'https://hackpuc-30.herokuapp.com';
   }
 
   getPresident(name) {
-    return axios.get(`/${this.apiUrl}?estado=brasil&nome=${name}`);
+    return axios.get(`${this.apiUrl}/${this.apiPath}?estado=br&nome=${name}`);
   }
 
   getRjCandidate(name) {
-    return axios.get(`/${this.apiUrl}?estado=rj&nome=${name}`);
+    return axios.get(`/${this.apiPath}?estado=rj&nome=${name}`);
   }
 
   filterCandidateByState(name, state) {
-    return axios.get(`/${this.apiUrl}?estado=${state}&nome=${name}`);
+    return axios.get(`/${this.apiPath}?estado=${state}&nome=${name}`);
   }
 }
 
