@@ -45,4 +45,4 @@ export default class CandidateItem extends React.Component {
       </Link>
     );
   }
-};
+}

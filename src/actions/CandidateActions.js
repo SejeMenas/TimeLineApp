@@ -5,10 +5,9 @@ class CandidateActions {
 
   fetchCandidate(name) {
     Fetcher.getPresident(name).then((response) => {
-      console.log(response.data);
       this.dispatch(response.data);
     }).catch((err) => {
-        console.log('candidato não encontrado: ', err);
+      alert('candidato não encontrado: ', err);
     });
   }
   fetchCandidateByFoto(screenshot) {
