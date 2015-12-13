@@ -10,6 +10,7 @@ class CandidateActions {
       alert('candidato não encontrado: ', err);
     });
   }
+
   fetchCandidateByFoto(screenshot) {
     Fetcher.getCandidateByFoto(screenshot).then((response) => {
       console.log(response.data);
@@ -18,5 +19,16 @@ class CandidateActions {
         console.log('candidato não encontrado: ', err);
     });
   }
+
+  getMockCandidates() {
+    Fetcher.getMockCandidates().then((response) => {
+      console.log(response.data);
+      this.dispatch(response.data);
+      location.reload();
+    }).catch((err) => {
+        console.log('candidato não encontrado: ', err);
+    });
+  }
+
 }
 export default flux.createActions(CandidateActions);

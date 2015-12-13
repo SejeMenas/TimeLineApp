@@ -16,8 +16,8 @@ class Fetcher {
     return axios.get(`${this.apiUrl}/${this.apiPath}?partido=${partido}`);
   }
 
-  getRjCandidate(name) {
-    return axios.get(`${this.apiUrl}/${this.apiPath}?estado=rj&nome=${name}`);
+  getMockCandidates() {
+    return axios.get(`${this.apiUrl}/${this.apiPath}?estado=rj&cargo=6`);
   }
 
   filterCandidateByState(name, state) {
