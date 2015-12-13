@@ -4,17 +4,18 @@ import './Header.less';
 var CandidateHeader = React.createClass({
   render() {
     return (
-        <div className="header--container0">
-          <div className="header--text col-xs-12">
-            <span className="header--name col-xs-12">Nome do candidato</span>
-          </div>
-          <div className="header--img col-xs-12">
-          </div>
-          <div className="col-xs-3">
-            <br/><br/><br/>
-            <span className="header--team">Partido</span>
+    <div className="container-fuid header" id="principal">
+      <div className="row">
+        <div className="col-xs-12">
+          <h3 className="text">NOME DO POLITICO</h3>
+          <h3 className="pull-right partido text">PSDB</h3>
+            <div className="header-img">
+              <div className="line-img">
+              </div>
+            </div>
           </div>
         </div>
+    </div>
     );
   }
 });

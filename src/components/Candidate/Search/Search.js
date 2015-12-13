@@ -9,7 +9,7 @@ export default class CandidateList extends React.Component {
     super(props);
 
     this.state = {
-      query:'',
+      query:''
     };
 
     this.handleChange = this.handleChange.bind(this);
