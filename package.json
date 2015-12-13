@@ -62,7 +62,7 @@
     "less": "^2.5.3"
   },
   "dependencies": {
-    "alt": "^0.18.1",
+    "alt": "0.17.1",
     "axios": "^0.8.0",
     "core-js": "^1.2.6",
     "history": "1.13.1",
@@ -72,6 +72,7 @@
     "react-addons-test-utils": "^0.14.0",
     "react-dom": "^0.14.0",
     "react-router": "^1.0.2",
-    "react-webcam": "0.0.8"
+    "react-webcam": "0.0.8",
+    "reqwest": "^2.0.5"
   }
 }

@@ -1,19 +1,21 @@
 import flux from '../flux';
 
-import CheckoutActions from '../actions/CandidateActions';
+import CandidateActions from '../actions/CandidateActions';
 
-class CheckoutStore {
+class CandidateStore {
   constructor() {
-    this.bindActions(CheckoutActions);
+    this.bindActions(CandidateActions);
 
     this.state = {
-      candidatos: [];
+      nome: 'MOCK',
+      partido: 'MOCK',
+      foto: '',
+      image: ''
     };
   }
 
-  onFetchCandidate(candidato){
-    this.setState({candidates: candidato});
-    console.log('STORE: ', this.state.candidatos);
+  onFetchCandidate(data){
+    this.setState({nome: data[0].nome, partido: data[0].partido, foto: data[0].foto});
   }
 }
 export default flux.createStore(CandidateStore, 'CandidateStore');
