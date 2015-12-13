@@ -1,4 +1,5 @@
 import axios from 'axios';
+import reqwest from 'reqwest';
 
 class Fetcher {
   constructor() {
@@ -21,6 +22,17 @@ class Fetcher {
 
   filterCandidateByState(name, state) {
     return axios.get(`${this.apiUrl}/${this.apiPath}?estado=${state}&nome=${name}`);
+  }
+
+  getCandidateByFoto(screenshot) {
+    return reqwest({
+        url: `${this.apiUrl}/procura`
+      , type: 'kimberly'
+      , method: 'post'
+      , contentType: 'application/octet-stream'
+      , crossOrigin: true
+      , data: screenshot
+    })
   }
 }
 
