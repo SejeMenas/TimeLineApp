@@ -1,4 +1,4 @@
-import React, {PropTypes} from 'react';
+import React from 'react';
 import './Search.less';
 
 export default class CandidateList extends React.Component {

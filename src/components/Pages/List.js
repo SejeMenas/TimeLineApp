@@ -1,4 +1,4 @@
-import React, {PropTypes} from 'react';
+import React from 'react';
 import CandidateItem from '../Candidate/Item/Item';
 import Search from '../Candidate/Search/Search';
 
