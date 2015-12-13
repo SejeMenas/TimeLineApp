@@ -1,6 +1,7 @@
 import React from 'react';
+import History from '../Candidate/History/History';
 
-class CandidateHistory extends React.Component {
+class HistoryPage extends React.Component {
 
   render() {
     return (
@@ -11,4 +12,4 @@ class CandidateHistory extends React.Component {
   }
 }
 
-export default CandidateHistory;
+export default HistoryPage;
