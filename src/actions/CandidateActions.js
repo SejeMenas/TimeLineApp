@@ -30,5 +30,6 @@ class CandidateActions {
         console.log('candidato não encontrado: ', err);
     });
   }
+
 }
 export default flux.createActions(CandidateActions);

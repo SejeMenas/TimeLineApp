@@ -14,7 +14,13 @@ class CandidateStore {
   }
 
   onFetchCandidate(data){
-    this.setState({nome: data[0].nome, partido: data[0].partido, foto: data[0].foto});
+    var nomes = [];
+    var partidos = [];
+    var fotos = [];
+    nomes.push(data[0].nome);
+    partidos.push(data[0].partido);
+    fotos.push(data[0].foto);
+    this.setState({nome: nomes, partido: partidos, foto: fotos});
   }
 
   onGetMockCandidates(data){
