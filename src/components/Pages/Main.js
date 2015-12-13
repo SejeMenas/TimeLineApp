@@ -20,7 +20,7 @@ class AppComponent extends React.Component {
           <Link to='/list' onClick={this.click}>
           <div className="container">
             <span className="col-xs-12 introduction--text container">
-              Aponte sua câmera para ter o reconhecimento facial automático do candidato
+              Toque na tela para ter o reconhecimento facial automático do candidato
             </span>
           </div>
             <button className="col-xs-offset-1 col-xs-10 btn gotolist">
