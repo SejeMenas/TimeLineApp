@@ -1,13 +1,14 @@
 import React from 'react';
 import {Link} from 'react-router';
 import CandidateScan from '../Candidate/Scan/Scan';
+import CandidateActions from '../../actions/CandidateActions';
 
 import '../../styles/main.less';
 let scan = require('../../images/scan.png');
 
 class AppComponent extends React.Component {
   click() {
-    location.reload();
+    CandidateActions.getMockCandidates();
   }
   render() {
     return (
