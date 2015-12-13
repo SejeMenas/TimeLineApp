@@ -26,12 +26,12 @@ class Fetcher {
 
   getCandidateByFoto(screenshot) {
     return reqwest({
-        url: `${this.apiUrl}/procura`
-      , type: 'kimberly'
+      url: `${this.apiUrl}/procura`
+      , type: 'json'
       , method: 'post'
-      , contentType: 'application/octet-stream'
+      , contentType: 'application/json'
       , crossOrigin: true
-      , data: screenshot
+      , data: JSON.stringify({image: screenshot})
     })
   }
 }
