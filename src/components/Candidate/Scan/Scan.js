@@ -11,7 +11,7 @@ class Scan extends React.Component {
   render() {
     return (
       <div onClick={this.click.bind(this)}>
-        <Webcam ref="webcam" audio={false} className="camera--webcam"/>
+        <Webcam height={300} ref="webcam" audio={false} className="camera--webcam"/>
       </div>
     );
   }
